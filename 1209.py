@@ -41,7 +41,7 @@ for number in range(5):
     print(calc_power(number))
 
 # task 3
-def cyclic_shift(values: list, direction: str) -> list:
+def shift(values: list, direction: str) -> list:
     steps = int(direction[1])
     if direction[0].lower() == 'b':
         return values[steps:] + values[:steps]
@@ -51,5 +51,5 @@ def cyclic_shift(values: list, direction: str) -> list:
 
 data = [1, 2, 3, 4, 4, 5, 6, 7, 78, 9]
 
-print(cyclic_shift(data, 'f10'))
-print(cyclic_shift(data, 'b1'))
+print(shift(data, 'f10'))
+print(shift(data, 'b1'))
